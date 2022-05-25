@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buy</title>
+	    <style>
+	    	textarea{
+	    		width: 100%;
+	    	}
+        *{
+            text-align: center;
+            text-transform: capitalize;
+            color: darkgreen;
+        }
+      table{
+            border: 0px solid grey;
+            border-radius: 3px;
+            font-size: large;
+            margin:5px 300px;
+            border-collapse: collapse;
+            background-color: rgba(200, 208, 237, 0.619);
+        }
+        td{
+            border-top: 0px solid grey;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 0px solid grey;
+            padding: 30px;
+        }
+        tr{
+            padding: 40px;
+        }
+        tr:hover{
+            background-color:rgb(184, 245, 245);
+        }
+
+        @media(max-width:600px) {
+            html{
+                 
+                font-size: medium;
+                text-align: center;
+            }
+               table{
+                width: 100%;
+                margin: 0px;
+                height: auto;
+            border: 0px solid grey;
+            border-radius: 3px;
+            font-size: medium;
+            border-collapse: collapse;
+        }
+                td{
+            padding: 4px;
+        }
+        tr{
+            padding: 9px;
+        }
+        option{
+        	width: 100px;
+        }
+        }
+    </style>
+</head>
+<body>
+	<caption style="color: darkgreen;"><h1>Buy Now</h1></caption>
+<table border="1px">
+	<form>
+    <tr>
+    <td><label for="fn"><b>First Name</b></label></td>
+    <td ><input type="text" id="fn" minlength="3" required autofocus name="FN"></td>
+</tr>
+<tr>
+       
+    <td><label for="ln"><b>Last Name</b></label></td>
+   <td > <input type="text" required minlength="3" name="LN" id="ln"></td>
+   </tr>
+<tr>
+   <td> <label for="phone"><b>phone Number</b></label></td>
+   <td > <input type="tel" id="phone" pattern="[0-9]{11}" placeholder="01012345678" name="phone" required ></td>
+</tr>
+<tr>
+  <td>  <label for="add"><b>Address</b></label>
+  </td>
+  <td >  <input type="text" id="add" name="Address" required></td>
+</tr>
+<tr>
+	<td>
+	<label for="buy"><b>Menu</b></label>
+</td>
+<td>
+	<select name="buy things" required>
+		<label>Chickens</label>
+		<optgroup label="Chickens">
+			<option>Roast-Chicken-With-Rosemary  200 L.E</option>
+			<option>Beer-Marinated-Chicken 120 L.E </option>
+			<option>Thumbnail-Southern-Fried-Chicken 100 L.E</option>
+			<option>Whole rosemary Chicken  150 L.E</option>
+			<option>Baked-Chickenpg 80 L.E</option>
+			<option>Clark-Roast-Chicken 130 L.E</option>
+		</optgroup>
+		<label>Hamborgara</label>
+		<optgroup label="Hamborgara">
+			<option>Cheese Hamborgar 50 L.E</option>
+			<option>Hamborgara With Extra French Fries 70 L.E</option>
+		</optgroup>
+		<label>Fishes</label>
+		<optgroup label="Fishes">
+			<option>Glazed salamon 85 L.E</option>
+			<option>fried fish 70 L.E</option>
+		</optgroup>
+		<label>Pizza</label>
+		<optgroup label="Pizza">
+			<option>Pizza Code1 120 L.E</option>
+			<option>Pizza code2 130 L.E</option>
+			<option>Pizza code3 120 L.E</option>
+			<option>Pizza code4 140 L.E</option>
+			<option>Glazed salamon 180 L.E</option>
+		</optgroup>
+		<label>Cakes</label>
+		<optgroup label="Cakes">
+			<option>Caramello-Cake  210 L.E</option>
+			<option>Strawberry Cake 280 L.E </option>
+			<option>Boxed-Cake-Mix-Hack 180 L.E</option>
+		</optgroup>
+		<label>Juices</label>
+		<optgroup label="Juices">
+			<option>Fresh Orange Juice 15 L.E </option>
+			<option>Fresh Apple Juice 20 L.E </option>
+			<option>Australian-Gold 25 L.E</option>
+		</optgroup>
+		<label>Salad</label>
+		<optgroup>
+			<option>Classic Chicken Salad 60 L.E</option>
+			<option>Greek-Chicken-Salad 60 L.E</option>
+			<option>Green Salad 20 L.E</option>
+			<option>SevenLayerSalad 30 L.E</option>
+		</optgroup>
+		<label>Fruit Salad</label>
+		<optgroup label="Fruit Salad">
+			<option>Honey Lime Fruit Salad 30 L.E</option>
+			<option>Five Ingredient Fruit Salad 35 L.E</option>
+			<option>33 Fruit Salad five  40 L.E </option>
+			<option>Fruit Salad With Honey 30 L.E</option>
+		</optgroup>
+		<label> Ice Cream</label>
+		<optgroup label="Ice Cream">
+			<option>Fruit_cream 15 L.E</option>
+			<option>Fruit Salad With Ice Cream 15 L.E</option>
+			<option>Fruit Salad With Ice Cream 2 15 L.E</option>
+			<option>Fresh Fruit Salad Wih Ice Cream 15 L.E</option>
+			<option>Healthy-Fruit-Salad-With Scoops-Of-Creamy-Cherry 20 L.E</option>
+		</optgroup>
+	</select>
+	<tr>	
+		<td colspan="3">
+		<textarea cols="10" rows="10" >Write Your Opinion About Us</textarea>
+	</td>
+</tr>
+	<tr>
+    <td colspan="3">
+    <input style=" font-size:large;font-weight: bold; border:1px solid grey ; background-color:white;" type="submit" name="submit" value="Order"></td>
+</tr>
+	</form>
+</table>
+</body>
+</html>
